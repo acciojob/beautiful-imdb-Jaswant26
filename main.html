@@ -1,16 +1,72 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb Movie Detail Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .moviePic {
+            width: 300px;
+            height: auto;
+            opacity: 0.8;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .movieDetail {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Additional styles for better aesthetics */
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .movieInfo {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add your own styles for other elements as needed */
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <h1>Movie Title</h1>
+        <div class="movieInfo">
+            <img src="https://images-cdn.ubuy.co.in/63b7b107d4159432fb5ec817-avengers-infinity-war-movie-poster.jpg" alt="Movie Poster" class="moviePic">
+            <p class="movieDetail">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada, libero non vestibulum cursus, metus justo vehicula sapien, a iaculis turpis purus a enim.
+            </p>
+        </div>
+    </div>
 </body>
-
 </html>
